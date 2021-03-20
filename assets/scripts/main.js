@@ -1,7 +1,12 @@
 'use strict'
-import {areNumbersEqual} from "./utils.js";
-import {inputNumber} from "./utils.js";
-import {result} from "./utils.js";
+import {areNumbersEqual, getRandomNumber} from "./utils.js";
+const result = getRandomNumber(1, 11);
+const inputNumber = prompt('Введите число от 1 до 10');
 console.log(`Вы ввели ${inputNumber}`);
 console.log(`Сгенерированное число = ${result}`);
-areNumbersEqual();
+alert(areNumbersEqual(result, inputNumber));
+
+
+
+
+
